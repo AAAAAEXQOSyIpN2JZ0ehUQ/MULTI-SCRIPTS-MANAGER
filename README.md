@@ -1,5 +1,5 @@
 ﻿# MULTI-SCRIPTS MANAGER
-# UPDATE 05/12/2020
+# UPDATE 02/01/2020
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/blob/main/Imagenes/Multi-Scripts-Manager.png)
 
@@ -8,7 +8,7 @@
 ## :heavy_exclamation_mark: Requerimientos
 
 * Un sistema operativo basado en Linux (Ubuntu o Debian) 
-* Recomendamos Ubuntu 16.04 Server x86_64
+* Recomendamos Ubuntu o Debian Server x86_64
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 
