@@ -16,7 +16,7 @@ Comandos para executar:
 
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 
-Acceso directo al scripts execute el comando: mko
+* ACCESO DIRECTO AL SCRIPTS EXECUTE EL COMANDO: mko
 -------------------------------------------------------------------------------
 
 ```
