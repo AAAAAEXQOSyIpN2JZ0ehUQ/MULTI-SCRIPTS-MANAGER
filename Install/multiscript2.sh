@@ -1,7 +1,7 @@
 #!/bin/bash
 #====================================================
 #	SCRIPT: MULTI SCRIPTS MANAGER
-#   DATA ATT:   17 de Dic 2020
+#   DATA ATT:   16 de Ene 2020
 #	DESENVOLVIDO POR:	TEAM ILLUMINATI
 #	COLABORADOR:	        JONY RIVERA
 #	CONTATO TELEGRAM:	NO DISPONIBLE
@@ -35,9 +35,6 @@ scriptmx_casita () {
 scriptmx_illuminati () {
     sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
 }
-scriptmx_kaliofc () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/Install/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
-}
 vpspack20 () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/VPSPACK-SERVER-V2.0/instalarold && bash instalarold
 }
@@ -59,6 +56,9 @@ scriptadmmx_reapergamo1test () {
 scriptadmmx_reapergamo () {
     apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/s657r7dcaiq9oc9/instala.sh; chmod 777 instala.sh* && ./instala.sh*; passwd
 }
+cgh () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/instala.sh; chmod 777 instala.sh* && ./instala.sh*
+}
 atualizar () {
     rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 }
@@ -70,32 +70,32 @@ while true $x != "ok"
 do
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r050 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r054 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo -e "
 \033[37m------------  \033[1;30m[ \033[37m TEAM-ILUUMINATI \033[1;30m]\033[37m  --------------
-\033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE ALPHA   \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v32          \033[1;32m(FREE) \033[37m∆
+\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE ALPHA   \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mNEWADM MOD DANKELTHAHER      \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
 \033[37m------------  \033[1;30m[ \033[37m SCRIPTS DE PAGA \033[1;30m]\033[37m  --------------
-\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS                  \033[1;31m(KEYS) 
-\033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER v31          \033[1;31m(KEYS)
+\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mNEW ADM-VPS OFICIAL          \033[1;31m(KEYS) \033[37m∆
+\033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER OFICIAL      \033[1;31m(KEYS)
+\033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER BY SCHUMOGH      \033[1;31m(KEYS)
 \033[37m------------  \033[1;30m[ \033[37m LIBERADOS POR EL DEV \033[1;30m]\033[37m  ---------
-\033[1;31m[\033[1;36m 09 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE) \033[37m∆
 \033[37m------------  \033[1;30m[ \033[37m TEAM-CASITA \033[1;30m]\033[37m  ------------------
-\033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 12 \033[1;31m] \033[1;37m• \033[1;33mADMMX BY SIXREAPER-CASITA    \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m 13 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER ES-CASITA    \033[1;32m(FREE)
-\033[1;31m[\033[1;36m 14 \033[1;31m] \033[1;37m• \033[1;33mNEWADM DANKELTHAHER-CASITA   \033[1;32m(FREE)
-\033[1;31m[\033[1;36m 15 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-OFICIAL      \033[1;32m(FREE)
+\033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA       \033[1;32m(FREE) \033[37m∆
+\033[1;31m[\033[1;36m 12 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX-CASITA    \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 13 \033[1;31m] \033[1;37m• \033[1;33mADMMX BY SIXREAPER-CASITA    \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 14 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER ES-CASITA    \033[1;32m(FREE)
+\033[1;31m[\033[1;36m 15 \033[1;31m] \033[1;37m• \033[1;33mNEWADM DANKELTHAHER-CASITA   \033[1;32m(FREE)
 \033[37m------------  \033[1;30m[ \033[37m OPCIONES DE SISTEMA \033[1;30m]\033[37m  ----------
 \033[1;31m[\033[1;36m 16 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
 \033[1;31m[\033[1;36m 17 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
-\033[1;31m[\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m<\033[0m \033[0m"
+\033[1;31m[\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m<                 \033[1;37m@admmanagerfree\033[0m \033[0m"
 echo -e "$barra"
 echo ""
 echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read x
@@ -143,37 +143,37 @@ case "$x" in
    ;;     
    9 | 09)
    clear
-   newfreeinstaldev
+   cgh
    exit;
-   ;;
+   ;;     
    10)
    clear
-   scriptmx_casita
+   newfreeinstaldev
    exit;
    ;;
    11)
    clear
-   power
+   scriptmx_casita
    exit;
    ;;
    12)
    clear
-   scriptadmmx_reapergamo
+   power
    exit;
    ;;
    13)
    clear
-   sshpluscasitaES
+   scriptadmmx_reapergamo
    exit;
    ;;
    14)
    clear
-   dankelcasita
+   sshpluscasitaES
    exit;
    ;;
    15)
    clear
-   scriptmx_kaliofc
+   dankelcasita
    exit;
    ;;
    16)
