@@ -1,7 +1,7 @@
 #!/bin/bash
 #====================================================
 #	SCRIPT: MULTI SCRIPTS MANAGER
-#   DATA ATT:   16 de Ene 2020
+#   DATA ATT:   18 de Ene 2020
 #	DESENVOLVIDO POR:	TEAM ILLUMINATI
 #	COLABORADOR:	        JONY RIVERA
 #	CONTATO TELEGRAM:	NO DISPONIBLE
