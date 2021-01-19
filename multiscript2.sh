@@ -57,7 +57,7 @@ scriptmx_casita () {
     sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/Casita/instalscript.sh; chmod +x instalscript.sh* && ./instalscript.sh*
 }
 power () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/VPSPACK-MOD_PWRMX/instalador && chmod +x instalador && ./instalador
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/vpspack5.8/master/instalador/instalavps && chmod +x instalavps && ./instalavps
 }
 scriptadmmx_reapergamo () {
     apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/s657r7dcaiq9oc9/instala.sh; chmod 777 instala.sh* && ./instala.sh*; passwd
@@ -106,10 +106,10 @@ echo -e "
 \033[1;31m[\033[1;36m 10 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE OFICIAL-LIV     \033[1;32m(FREE) 
 \033[37m------------  \033[1;30m[ \033[37m TEAM-CASITA \033[1;30m]\033[37m  ------------------
 \033[1;31m[\033[1;36m 11 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-CASITA v8.1  \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m 12 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX v3.5K     \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m 12 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK BY POWERMX v5.8      \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 13 \033[1;31m] \033[1;37m• \033[1;33mADMMX BY SIXREAPER           \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 14 \033[1;31m] \033[1;37m• \033[1;33mSSHPLUS MANAGER ES           \033[1;32m(FREE)
-\033[1;31m[\033[1;36m 15 \033[1;31m] \033[1;37m• \033[1;33mNEWADM DANKELTHAHER          \033[1;32m(FREE)
+\033[1;31m[\033[1;36m 15 \033[1;31m] \033[1;37m• \033[1;33mNEWADM DANKELTHAHER          \033[1;32m(FREE) \033[1;31mOFF
 \033[37m------------  \033[1;30m[ \033[37m OPCIONES DE SISTEMA \033[1;30m]\033[37m  ----------
 \033[1;31m[\033[1;36m 16 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
 \033[1;31m[\033[1;36m 17 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
