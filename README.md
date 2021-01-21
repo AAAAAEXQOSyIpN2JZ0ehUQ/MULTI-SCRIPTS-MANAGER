@@ -1,5 +1,5 @@
 ﻿# MULTI-SCRIPTS MANAGER
-# UPDATE 18/01/2020
+# UPDATE 21/01/2020
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/blob/main/Imagenes/Multi-Scripts-Manager.png)
 
@@ -9,7 +9,6 @@
 
 * Un sistema operativo basado en Linux (Ubuntu o Debian) 
 * Recomendamos Ubuntu o Debian Server x86_64
-* Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 
 Comandos para executar: 
