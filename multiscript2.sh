@@ -10,8 +10,6 @@
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 
-##SCRIPTS A INSTALAR
-
 ##TEAM-ILUUMINATI
 
 sshplus () {
@@ -75,13 +73,7 @@ atualizar () {
     rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 }
 remove_multiscripts () {
-    rm -rf $HOME/multiscript2.sh
-}
-
-##TESTER SCRIPTS
-
-scriptadmmx_reapergamo1test () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/scripts/master/gamo/instalador; chmod 777 instalador* && ./instalador*; passwd
+    rm -rf $HOME/multiscript2.sh && rm -rf /bin/mko
 }
 
 ##MENU
@@ -216,4 +208,5 @@ case "$x" in
 esac
 done
 }
+menu
 #fim
