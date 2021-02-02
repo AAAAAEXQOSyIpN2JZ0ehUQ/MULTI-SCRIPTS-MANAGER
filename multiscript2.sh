@@ -8,12 +8,12 @@
 #	CANAL TELEGRAM:	https://t.me/admmanagerfree
 #====================================================
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
+#echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 echo "/root/multiscript2.sh" > /bin/msm && chmod +x /bin/msm > /dev/null 2>&1
 
 ##TEAM-ILUUMINATI
 
-sshplus () {
+sshplusfree () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
 }
 admmanageralpha () {
@@ -74,7 +74,7 @@ atualizar () {
     rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 }
 remove_multiscripts () {
-    rm -rf $HOME/multiscript2.sh && rm -rf /bin/mko
+    rm -rf $HOME/multiscript2.sh && rm -rf /bin/msm
 }
 
 ##MENU
@@ -114,7 +114,7 @@ echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read
 case "$x" in 
    1 | 01)
    clear
-   sshplus
+   sshplusfree
    exit;
    ;;
    2 | 02)
