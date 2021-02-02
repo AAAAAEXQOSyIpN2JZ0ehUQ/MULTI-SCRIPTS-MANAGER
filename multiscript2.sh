@@ -1,7 +1,7 @@
 #!/bin/bash
 #====================================================
 #	SCRIPT: MULTI SCRIPTS MANAGER
-#   DATA ATT:   18 de Ene 2020
+#   DATA ATT:   01 de Feb 2020
 #	DESENVOLVIDO POR:	TEAM ILLUMINATI
 #	COLABORADOR:	        JONY RIVERA
 #	CONTATO TELEGRAM:	NO DISPONIBLE
@@ -9,6 +9,7 @@
 #====================================================
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
+echo "/root/multiscript2.sh" > /bin/msm && chmod +x /bin/msm > /dev/null 2>&1
 
 ##TEAM-ILUUMINATI
 
