@@ -67,6 +67,18 @@ dankelcasita () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/dankeladm/master/instalador/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 }
 
+##OPCIONES MULTI INSTALL
+
+keygenplus () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Generador/instala_server; chmod 777 instala_server* && ./instala_server*
+}
+multiinstallplus () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Multi-Instalador/sshplus.sh; chmod +x sshplus.sh; ./sshplus.sh
+}
+panelweversiones () {
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/Panelweb.sh; chmod +x Panelweb.sh; ./Panelweb.sh
+}
+
 ##OPCIONES DE SISTEMA
 
 atualizar () {
@@ -84,13 +96,13 @@ while true $x != "ok"
 do
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r056 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r088 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;33mSSHPLUS MANAGER v32            \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m02\033[1;31m] \033[1;33mADM-MANAGER-ULTIMATE ALPHA     \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m03\033[1;31m] \033[1;33mNEW-ULTIMATE r6.3.4            \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m04\033[1;31m] \033[1;33mVPSPACK-SERVER-V2.0            \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m05\033[1;31m] \033[1;33mNEWADM MOD DANKELTHAHER        \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m05\033[1;31m] \033[1;33mNEWADM MOD DANKELTHAHER        \033[1;32m(FREE) \033[1;31mOFF
 \033[1;31m[\033[1;36m06\033[1;31m] \033[1;33mVPSMX BY KALIX1 v8.2           \033[1;32m(FREE) \033[37m∆
 \033[0m\e[34m--------------------------------------------------
 \033[1;31m[\033[1;36m07\033[1;31m] \033[1;33mNEW ADM-VPS OFICIAL            \033[1;31m(KEYS) \033[37m∆
@@ -104,8 +116,12 @@ echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;33mSSHPLUS MANAGER v32       
 \033[1;31m[\033[1;36m14\033[1;31m] \033[1;33mSSHPLUS MANAGER ES-CASITA      \033[1;32m(FREE)
 \033[1;31m[\033[1;36m15\033[1;31m] \033[1;33mNEWADM DANKELTHAHER-CASITA     \033[1;32m(FREE) \033[1;31mOFF
 \033[0m\e[34m--------------------------------------------------
-\033[1;31m[\033[1;36m16\033[1;31m] \033[1;35m[!] \033[1;32mACTUALIZAR                \033[1;31mRam:\033[1;37m $_usor
-\033[1;31m[\033[1;36m17\033[1;31m] \033[1;35m[!] \033[1;31mDESINSTALAR \033[1;35m[\033[1;37m MSM \033[1;35m]       \033[1;31mNucleo:\033[1;37m $_usop
+\033[1;31m[\033[1;36m16\033[1;31m] \033[1;33mGENERADOR KEY SSHPLUS MANAGER  \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m17\033[1;31m] \033[1;33mMULTI-INTALADOR SSHPLUS        \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m18\033[1;31m] \033[1;33mPAINEL SSHPLUS WEB (VERSIONES) \033[1;32m(FREE)
+\033[0m\e[34m--------------------------------------------------
+\033[1;31m[\033[1;36m19\033[1;31m] \033[1;35m[!] \033[1;32mACTUALIZAR                \033[1;31mRam:\033[1;37m $_usor
+\033[1;31m[\033[1;36m20\033[1;31m] \033[1;35m[!] \033[1;31mDESINSTALAR \033[1;35m[\033[1;37m MSM \033[1;35m]       \033[1;31mNucleo:\033[1;37m $_usop
 \033[1;31m[\033[1;36m00\033[1;31m] \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m<                     \033[1;37m@admmanagerfree\033[0m \033[0m"
 echo -e "$barra"
 echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read x
@@ -188,10 +204,25 @@ case "$x" in
    ;;
    16)
    clear
-   atualizar
+   keygenplus
    exit;
    ;;
    17)
+   clear
+   multiinstallplus
+   exit;
+   ;;
+   18)
+   clear
+   panelweversiones
+   exit;
+   ;;
+   19)
+   clear
+   atualizar
+   exit;
+   ;;
+   20)
    clear
    remove_multiscripts
    exit;
