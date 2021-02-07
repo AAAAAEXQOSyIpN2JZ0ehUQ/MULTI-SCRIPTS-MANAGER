@@ -10,6 +10,52 @@
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "/root/multiscript2.sh" > /bin/msm && chmod +x /bin/msm > /dev/null 2>&1
 
+##ACTUALIZA SISTEMA
+
+fun_prog ()
+{
+	comando[0]="$1" 
+    ${comando[0]}  > /dev/null 2>&1 & 
+	tput civis
+	echo -ne "\033[1;32m.\033[1;33m.\033[1;31m. \033[1;32m"
+    while [ -d /proc/$! ]
+	do
+		for i in / - \\ \|
+		do
+			sleep .1
+			echo -ne "\e[1D$i"
+		done
+	done
+	tput cnorm
+	echo -e "\e[1DOK"
+}
+fun_update () {
+    apt-get update -y
+}
+fun_upgrade () {
+    apt-get upgrade -y
+}
+fun_atualizar () {
+    rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh
+}
+update_fun () {
+clear
+echo -e "$barra"
+echo -e "\E[41;1;37m        ⇱ ACTUALIZANDO SISTEMA MSM ⇲               \E[0m"
+echo -e "$barra"
+echo -e " "
+echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get update "; fun_prog 'fun_update'
+echo -e " "
+echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mapt-get upgrade "; fun_prog 'fun_upgrade'
+echo -e " "
+echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mActualizando MIS "; fun_prog 'fun_atualizar'
+echo -e " "
+echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mRedirigiendo "; fun_prog 'sleep 3'
+sleep 1
+echo -e " "
+chmod +x sshplus.sh; ./sshplus.sh
+}
+
 ##TEAM-ILUUMINATI
 
 sshplusfree () {
@@ -225,6 +271,11 @@ case "$x" in
    20)
    clear
    remove_multiscripts
+   exit;
+   ;;
+   update)
+   clear
+   update_fun
    exit;
    ;;
    0 | 00)
