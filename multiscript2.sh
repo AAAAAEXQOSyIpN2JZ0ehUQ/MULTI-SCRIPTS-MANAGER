@@ -53,7 +53,7 @@ echo -e " "
 echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mRedirigiendo "; fun_prog 'sleep 3'
 sleep 1
 echo -e " "
-chmod +x sshplus.sh; ./sshplus.sh
+chmod +x multiscript2.sh; ./multiscript2.sh
 }
 
 ##TEAM-ILUUMINATI
