@@ -1,20 +1,18 @@
 #!/bin/bash
 #====================================================
 #	SCRIPT: MULTI SCRIPTS MANAGER
-#   DATA ATT:   18 de Ene 2020
+#   DATA ATT:   01 de Feb 2020
 #	DESENVOLVIDO POR:	TEAM ILLUMINATI
 #	COLABORADOR:	        JONY RIVERA
 #	CONTATO TELEGRAM:	NO DISPONIBLE
 #	CANAL TELEGRAM:	https://t.me/admmanagerfree
 #====================================================
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "/root/multiscript2.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
-
-##SCRIPTS A INSTALAR
+echo "/root/multiscript2.sh" > /bin/msm && chmod +x /bin/msm > /dev/null 2>&1
 
 ##TEAM-ILUUMINATI
 
-sshplus () {
+sshplusfree () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
 }
 admmanageralpha () {
@@ -42,7 +40,7 @@ sshpluskey () {
     apt-get update -y; apt-get upgrade -y; wget sshplus.xyz/script/Plus; chmod 777 Plus; ./Plus
 }
 cgh () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/instala.sh; chmod 777 instala.sh* && ./instala.sh*
+    apt-get update -y; apt-get upgrade -y; wget -q https://www.dropbox.com/s/i87udxpj1lj17sa/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 }
 
 ##LIBERADOS POR EL DEV
@@ -75,13 +73,7 @@ atualizar () {
     rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 }
 remove_multiscripts () {
-    rm -rf $HOME/multiscript2.sh
-}
-
-##TESTER SCRIPTS
-
-scriptadmmx_reapergamo1test () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/scripts/master/gamo/instalador; chmod 777 instalador* && ./instalador*; passwd
+    rm -rf $HOME/multiscript2.sh && rm -rf /bin/msm
 }
 
 ##MENU
@@ -99,7 +91,7 @@ echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;33mSSHPLUS MANAGER v32       
 \033[1;31m[\033[1;36m03\033[1;31m] \033[1;33mNEW-ULTIMATE r6.3.4            \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m04\033[1;31m] \033[1;33mVPSPACK-SERVER-V2.0            \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m05\033[1;31m] \033[1;33mNEWADM MOD DANKELTHAHER        \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m06\033[1;31m] \033[1;33mVPSMX BY KALIX1 v8.2           \033[1;32m(FREE)
+\033[1;31m[\033[1;36m06\033[1;31m] \033[1;33mVPSMX BY KALIX1 v8.2           \033[1;32m(FREE) \033[37m∆
 \033[0m\e[34m--------------------------------------------------
 \033[1;31m[\033[1;36m07\033[1;31m] \033[1;33mNEW ADM-VPS OFICIAL            \033[1;31m(KEYS) \033[37m∆
 \033[1;31m[\033[1;36m08\033[1;31m] \033[1;33mSSHPLUS MANAGER OFICIAL        \033[1;31m(KEYS)
@@ -107,7 +99,7 @@ echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;33mSSHPLUS MANAGER v32       
 \033[1;31m[\033[1;36m10\033[1;31m] \033[1;33mNEW-ULTIMATE OFICIAL-LIV       \033[1;32m(FREE) 
 \033[0m\e[34m--------------------------------------------------
 \033[1;31m[\033[1;36m11\033[1;31m] \033[1;33mVPSMX BY KALIX1-CASITA v8.1    \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m12\033[1;31m] \033[1;33mVPSPACK BY POWERMX-CASITA v5.8 \033[1;32m(FREE) \033[37m∆
+\033[1;31m[\033[1;36m12\033[1;31m] \033[1;33mVPSPACK BY POWERMX-CASITA v5.8 \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m13\033[1;31m] \033[1;33mADMMX BY SIXREAPER-CASITA      \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m14\033[1;31m] \033[1;33mSSHPLUS MANAGER ES-CASITA      \033[1;32m(FREE)
 \033[1;31m[\033[1;36m15\033[1;31m] \033[1;33mNEWADM DANKELTHAHER-CASITA     \033[1;32m(FREE) \033[1;31mOFF
@@ -121,7 +113,7 @@ echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read
 case "$x" in 
    1 | 01)
    clear
-   sshplus
+   sshplusfree
    exit;
    ;;
    2 | 02)
@@ -212,7 +204,7 @@ case "$x" in
    ;;
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
-   sleep 2
+   ./multiscript2.sh
 esac
 done
 }
