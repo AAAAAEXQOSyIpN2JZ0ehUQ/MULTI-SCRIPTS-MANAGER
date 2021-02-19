@@ -1,6 +1,7 @@
 ﻿# MULTI-SCRIPTS MANAGER
-# UPDATE 07/02/2021
-
+```
+* UPDATE 07/02/2021
+```
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/blob/main/Imagenes/Multi-Scripts-Manager.png)
 
 **Manager Script**
@@ -11,7 +12,7 @@
 * Recomendamos Ubuntu o Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 
-Comandos para executar: 
+## Installation
 
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 
