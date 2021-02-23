@@ -17,6 +17,15 @@
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
 
 * ACCESO DIRECTO AL SCRIPTS EXECUTE EL COMANDO: ( msm )
+
+-------------------------------------------------------------------------------
+
+## Installation Versao Lite
+
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh; chmod +x multiscript2_lite.sh; ./multiscript2_lite.sh
+
+* ACCESO DIRECTO AL SCRIPTS EXECUTE EL COMANDO: ( msl )
+
 -------------------------------------------------------------------------------
 
 ```

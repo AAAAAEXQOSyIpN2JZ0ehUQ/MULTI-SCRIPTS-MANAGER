@@ -8,7 +8,7 @@
 #	CANAL TELEGRAM:	https://t.me/admmanagerfree
 #====================================================
 barra="\033[0m\e[34m——————————————————————————————————————————————————\033[0m"
-echo "/root/multiscript2.sh" > /bin/msm && chmod +x /bin/msm > /dev/null 2>&1
+echo "/root/multiscript2_lite.sh" > /bin/msl && chmod +x /bin/msl > /dev/null 2>&1
 
 ##ACTUALIZA SISTEMA
 
@@ -40,12 +40,14 @@ tput cnorm
 }
 
 update_fun () {
-##echo -e "$barra"
 echo ""
 fun_bar "apt-get update -y"
 fun_bar "apt-get upgrade -y"
-rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh > /dev/null 2>&1
-chmod +x multiscript2.sh; ./multiscript2.sh
+rm -rf $HOME/multiscript2_lite.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh > /dev/null 2>&1
+echo ""
+echo -e "\033[1;33m UPDATE COM SUCESSO -\033[1;32m OK !\033[1;37m"
+sleep 4s
+chmod +x multiscript2_lite.sh; ./multiscript2_lite.sh
 }
 
 ##TEAM-ILUUMINATI
@@ -53,14 +55,8 @@ chmod +x multiscript2.sh; ./multiscript2.sh
 sshplusfree () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus; chmod 777 Plus; ./Plus
 }
-admmanageralpha () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/instala.sh; chmod 777 instala.sh* && ./instala.sh*
-}
 newultimate () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/instalar.sh; chmod 777 instalar.sh* && ./instalar.sh*
-}
-vpspack20 () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/VPSPACK-SERVER-V2.0/instalarold && bash instalarold
 }
 dankel () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-DANKELTHAHER/instala.sh; chmod 777 instala.sh* && ./instala.sh*
@@ -81,28 +77,13 @@ cgh () {
     apt-get update -y; apt-get upgrade -y; wget -q https://www.dropbox.com/s/i87udxpj1lj17sa/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 }
 
-##LIBERADOS POR EL DEV
-
-newfreeinstaldev () {
-    apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/qhftefty46hz51x/newfreeinstal?dl=0 && bash new*
-}
-
 ##TEAM-CASITA
 
 scriptmx_casita () {
     sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/Casita/instalscript.sh; chmod +x instalscript.sh* && ./instalscript.sh*
 }
-power () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/vpspack5.8/master/instalador/instalavps && chmod +x instalavps && ./instalavps
-}
 scriptadmmx_reapergamo () {
     apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/s657r7dcaiq9oc9/instala.sh; chmod 777 instala.sh* && ./instala.sh*; passwd
-}
-sshpluscasitaES () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/scriptsmx/script/master/PLUSX/Plus; chmod 777 Plus; ./Plus
-}
-dankelcasita () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/dankeladm/master/instalador/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 }
 
 ##OPCIONES MULTI INSTALL
@@ -120,10 +101,10 @@ panelweversiones () {
 ##OPCIONES DE SISTEMA
 
 atualizar () {
-    rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh; chmod +x multiscript2.sh; ./multiscript2.sh
+    rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh; chmod +x multiscript2_lite.sh; ./multiscript2_lite.sh
 }
 remove_multiscripts () {
-    rm -rf $HOME/multiscript2.sh && rm -rf /bin/msm
+    rm -rf $HOME/multiscript2_lite.sh && rm -rf /bin/msl
 }
 
 ##MENU
@@ -137,29 +118,23 @@ echo -e "$barra"
 echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r088 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;33mSSHPLUS MANAGER v32            \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m02\033[1;31m] \033[1;33mADM-MANAGER-ULTIMATE ALPHA     \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m03\033[1;31m] \033[1;33mNEW-ULTIMATE r6.3.4            \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m04\033[1;31m] \033[1;33mVPSPACK-SERVER-V2.0            \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m05\033[1;31m] \033[1;33mNEWADM MOD DANKELTHAHER        \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m06\033[1;31m] \033[1;33mVPSMX BY KALIX1 v8.3           \033[1;32m(FREE) \033[37m∆
+\033[1;31m[\033[1;36m02\033[1;31m] \033[1;33mNEW-ULTIMATE r6.3.4            \033[1;32m(FREE) \033[37m∆
+\033[1;31m[\033[1;36m03\033[1;31m] \033[1;33mNEWADM MOD DANKELTHAHER        \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m04\033[1;31m] \033[1;33mVPSMX BY KALIX1 v8.3           \033[1;32m(FREE) \033[37m∆
 \033[0m\e[34m——————————————————————————————————————————————————
-\033[1;31m[\033[1;36m07\033[1;31m] \033[1;33mNEW ADM-VPS OFICIAL            \033[1;31m(KEYS) \033[37m∆
-\033[1;31m[\033[1;36m08\033[1;31m] \033[1;33mSSHPLUS MANAGER OFICIAL        \033[1;31m(KEYS)
-\033[1;31m[\033[1;36m09\033[1;31m] \033[1;33mADM-MANAGER BY SCHUMOGH        \033[1;31m(KEYS)
-\033[1;31m[\033[1;36m10\033[1;31m] \033[1;33mNEW-ULTIMATE OFICIAL-LIV       \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m05\033[1;31m] \033[1;33mNEW ADM-VPS OFICIAL            \033[1;31m(KEYS) \033[37m∆
+\033[1;31m[\033[1;36m06\033[1;31m] \033[1;33mSSHPLUS MANAGER OFICIAL        \033[1;31m(KEYS)
+\033[1;31m[\033[1;36m07\033[1;31m] \033[1;33mADM-MANAGER BY SCHUMOGH        \033[1;31m(KEYS)
 \033[0m\e[34m——————————————————————————————————————————————————
-\033[1;31m[\033[1;36m11\033[1;31m] \033[1;33mVPSMX BY KALIX1-CASITA v8.1    \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m12\033[1;31m] \033[1;33mVPSPACK BY POWERMX-CASITA v5.8 \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m13\033[1;31m] \033[1;33mADMMX BY SIXREAPER-CASITA      \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m14\033[1;31m] \033[1;33mSSHPLUS MANAGER ES-CASITA      \033[1;32m(FREE)
-\033[1;31m[\033[1;36m15\033[1;31m] \033[1;33mNEWADM DANKELTHAHER-CASITA     \033[1;32m(FREE) \033[1;31mOFF
+\033[1;31m[\033[1;36m08\033[1;31m] \033[1;33mVPSMX BY KALIX1-CASITA v8.1    \033[1;32m(FREE) \033[37m∆
+\033[1;31m[\033[1;36m09\033[1;31m] \033[1;33mADMMX BY SIXREAPER-CASITA      \033[1;32m(FREE) \033[37m∆
 \033[0m\e[34m——————————————————————————————————————————————————
-\033[1;31m[\033[1;36m16\033[1;31m] \033[1;33mGENERADOR KEY SSHPLUS MANAGER  \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m17\033[1;31m] \033[1;33mMULTI-INTALADOR SSHPLUS        \033[1;32m(FREE) 
-\033[1;31m[\033[1;36m18\033[1;31m] \033[1;33mPAINEL SSHPLUS WEB (VERSIONES) \033[1;32m(FREE)
+\033[1;31m[\033[1;36m10\033[1;31m] \033[1;33mGENERADOR KEY SSHPLUS MANAGER  \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m11\033[1;31m] \033[1;33mMULTI-INTALADOR SSHPLUS        \033[1;32m(FREE) 
+\033[1;31m[\033[1;36m12\033[1;31m] \033[1;33mPAINEL SSHPLUS WEB (VERSIONES) \033[1;32m(FREE)
 \033[0m\e[34m——————————————————————————————————————————————————
-\033[1;31m[\033[1;36m19\033[1;31m] \033[1;35m[!] \033[1;32mACTUALIZAR                \033[1;31mRam:\033[1;37m $_usor
-\033[1;31m[\033[1;36m20\033[1;31m] \033[1;35m[!] \033[1;31mDESINSTALAR \033[1;35m[\033[1;37m MSM \033[1;35m]       \033[1;31mNucleo:\033[1;37m $_usop
+\033[1;31m[\033[1;36m13\033[1;31m] \033[1;35m[!] \033[1;32mACTUALIZAR                \033[1;31mRam:\033[1;37m $_usor
+\033[1;31m[\033[1;36m14\033[1;31m] \033[1;35m[!] \033[1;31mDESINSTALAR \033[1;35m[\033[1;37m MSL \033[1;35m]       \033[1;31mNucleo:\033[1;37m $_usop
 \033[1;31m[\033[1;36m00\033[1;31m] \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m<                     \033[1;37m@admmanagerfree\033[0m \033[0m"
 echo -e "$barra"
 echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read x
@@ -172,101 +147,70 @@ case "$x" in
    ;;
    2 | 02)
    clear
-   admmanageralpha
+   newultimate
    exit;
    ;;
    3 | 03)
    clear
-   newultimate
+   dankel
    exit;
    ;;
    4 | 04)
    clear
-   vpspack20
+   scriptmx_illuminati
    exit;
    ;;      
    5 | 05)
    clear
-   dankel
+   admvps
    exit;
    ;;
    6 | 06)
    clear
-   scriptmx_illuminati
+   sshpluskey
    exit;
-   ;; 
+   ;;     
    7 | 07)
    clear
-   admvps
+   cgh
    exit;
    ;;
    8 | 08)
    clear
-   sshpluskey
-   exit;
-   ;;     
-   9 | 09)
-   clear
-   cgh
-   exit;
-   ;;     
-   10)
-   clear
-   newfreeinstaldev
-   exit;
-   ;;
-   11)
-   clear
    scriptmx_casita
    exit;
    ;;
-   12)
-   clear
-   power
-   exit;
-   ;;
-   13)
+   9 | 09)
    clear
    scriptadmmx_reapergamo
    exit;
    ;;
-   14)
-   clear
-   sshpluscasitaES
-   exit;
-   ;;
-   15)
-   clear
-   dankelcasita
-   exit;
-   ;;
-   16)
+   10)
    clear
    keygenplus
    exit;
    ;;
-   17)
+   11)
    clear
    multiinstallplus
    exit;
    ;;
-   18)
+   12)
    clear
    panelweversiones
    exit;
    ;;
-   19)
+   13)
    clear
    atualizar
    exit;
    ;;
-   20)
+   14)
    clear
    remove_multiscripts
    exit;
    ;;
    update)
-   clear
    update_fun
    exit;
    ;;
@@ -278,7 +222,7 @@ case "$x" in
    ;;
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
-   ./multiscript2.sh
+   ./multiscript2_lite.sh
 esac
 done
 }
