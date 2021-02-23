@@ -40,11 +40,13 @@ tput cnorm
 }
 
 update_fun () {
-##echo -e "$barra"
 echo ""
 fun_bar "apt-get update -y"
 fun_bar "apt-get upgrade -y"
 rm -rf $HOME/multiscript2.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2.sh > /dev/null 2>&1
+echo ""
+echo -e "\033[1;33m UPDATE COM SUCESSO -\033[1;32m OK !\033[1;37m"
+sleep 4s
 chmod +x multiscript2.sh; ./multiscript2.sh
 }
 
