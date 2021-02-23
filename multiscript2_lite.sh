@@ -43,7 +43,8 @@ update_fun () {
 echo ""
 fun_bar "apt-get update -y"
 fun_bar "apt-get upgrade -y"
-rm -rf $HOME/multiscript2_lite.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh > /dev/null 2>&1
+rm -rf $HOME/multiscript2_lite.sh
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh > /dev/null 2>&1
 echo ""
 echo -e "\033[1;33m UPDATE COM SUCESSO -\033[1;32m OK !\033[1;37m"
 sleep 4s
