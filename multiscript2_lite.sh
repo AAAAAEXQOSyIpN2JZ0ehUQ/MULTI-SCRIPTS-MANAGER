@@ -1,6 +1,6 @@
 #!/bin/bash
 #====================================================
-#	SCRIPT: MULTI SCRIPTS MANAGER
+#	SCRIPT: MULTI SCRIPTS MANAGER VERSAO LITE
 #   DATA ATT:   23 de Feb 2021
 #	DESENVOLVIDO POR:	TEAM ILLUMINATI
 #	COLABORADOR:	        JONY RIVERA
@@ -115,7 +115,7 @@ while true $x != "ok"
 do
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r001 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER LITE        \033[1;32m[\033[1;37m VERSAO: r001 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;33mSSHPLUS MANAGER v32            \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m02\033[1;31m] \033[1;33mNEW-ULTIMATE r6.3.4            \033[1;32m(FREE) \033[37m∆
