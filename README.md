@@ -1,6 +1,6 @@
 ﻿# MULTI-SCRIPTS MANAGER
 ```
-* UPDATE 07/02/2021
+* UPDATE 23/02/2021
 ```
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/blob/main/Imagenes/Multi-Scripts-Manager.png)
 
@@ -19,6 +19,10 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AA
 * ACCESO DIRECTO AL SCRIPTS EXECUTE EL COMANDO: ( msm )
 
 -------------------------------------------------------------------------------
+
+# MULTI-SCRIPTS MANAGER LITE
+
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/blob/main/Imagenes/Multi-Scripts-Manager-lite.png)
 
 ## Installation Versao Lite
 
