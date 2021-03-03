@@ -43,8 +43,7 @@ update_fun () {
 echo ""
 fun_bar "apt-get update -y"
 fun_bar "apt-get upgrade -y"
-rm -rf $HOME/multiscript2_lite.sh
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh > /dev/null 2>&1
+rm -rf $HOME/multiscript2_lite.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh > /dev/null 2>&1
 echo ""
 echo -e "\033[1;33m UPDATE COM SUCESSO -\033[1;32m OK !\033[1;37m"
 sleep 4s
@@ -84,7 +83,7 @@ scriptmx_casita () {
     sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/Casita/instalscript.sh; chmod +x instalscript.sh* && ./instalscript.sh*
 }
 scriptadmmx_reapergamo () {
-    apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/s657r7dcaiq9oc9/instala.sh; chmod 777 instala.sh* && ./instala.sh*; passwd
+    apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/s657r7dcaiq9oc9/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 }
 
 ##OPCIONES MULTI INSTALL
@@ -102,7 +101,7 @@ panelweversiones () {
 ##OPCIONES DE SISTEMA
 
 atualizar () {
-    rm -rf $HOME/multiscript2.sh
+    rm -rf $HOME/multiscript2_lite.sh
     wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh; chmod +x multiscript2_lite.sh; ./multiscript2_lite.sh
 }
 remove_multiscripts () {
