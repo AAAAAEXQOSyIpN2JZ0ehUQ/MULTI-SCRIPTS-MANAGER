@@ -101,8 +101,7 @@ panelweversiones () {
 ##OPCIONES DE SISTEMA
 
 atualizar () {
-    rm -rf $HOME/multiscript2_lite.sh
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh; chmod +x multiscript2_lite.sh; ./multiscript2_lite.sh
+    rm -rf $HOME/multiscript2_lite.sh; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/MULTI-SCRIPTS-MANAGER/main/multiscript2_lite.sh; chmod +x multiscript2_lite.sh; ./multiscript2_lite.sh
 }
 remove_multiscripts () {
     rm -rf $HOME/multiscript2_lite.sh && rm -rf /bin/msl
